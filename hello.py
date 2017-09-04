@@ -1,6 +1,6 @@
 from bottle import route, run, template
 
-@route('/hi/<name>')
+@route('/hello/<name>')
 def index(name):
     return template('<b>Hello {{name}}</b>!', name=name)
 
